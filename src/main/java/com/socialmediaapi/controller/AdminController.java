@@ -1,5 +1,6 @@
 package com.socialmediaapi.controller;
 
+import com.socialmediaapi.aspect.ToLog;
 import com.socialmediaapi.dto.AdminUserDto;
 import com.socialmediaapi.exception.NotFoundException;
 import com.socialmediaapi.mapper.UserMapper;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(value = "/api/v1/admin")
 @RequiredArgsConstructor
+@ToLog
 public class AdminController {
 
     private final UserRepository userRepository;

@@ -1,5 +1,6 @@
 package com.socialmediaapi.controller;
 
+import com.socialmediaapi.aspect.ToLog;
 import com.socialmediaapi.dto.AuthenticationRequestDto;
 import com.socialmediaapi.exception.NotFoundException;
 import com.socialmediaapi.model.User;
@@ -20,6 +21,7 @@ import java.util.Map;
 @RestController
 @RequestMapping(value = "/api/v1/auth")
 @RequiredArgsConstructor
+@ToLog
 public class AuthenticationController {
     private final AuthenticationManager authenticationManager;
 

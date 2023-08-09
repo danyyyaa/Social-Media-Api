@@ -1,5 +1,6 @@
 package com.socialmediaapi.controller;
 
+import com.socialmediaapi.aspect.ToLog;
 import com.socialmediaapi.dto.UserDto;
 import com.socialmediaapi.mapper.UserMapper;
 import com.socialmediaapi.model.User;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping(value = "/api/v1/users")
+@ToLog
 public class UserController {
     private final UserService userService;
 
