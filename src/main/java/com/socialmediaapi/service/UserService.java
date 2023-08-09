@@ -15,4 +15,6 @@ public interface UserService {
     Collection<User> findAll();
 
     void delete(Long id);
+
+
 }
