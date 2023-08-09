@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RequiredArgsConstructor
 @RestController
-//@RequestMapping(value = "/api/v1/users")
 @RequestMapping(value = "/api/users")
 @ToLog
 public class UserController {
